@@ -58,8 +58,9 @@ This is a **responsive landing page project** that combines **HTML, CSS, and Jav
 
 1. Clone or download the project  
    ```bash
-   git clone <your-repo-link>
+   git clone https://github.com/Ramyasree8589/Simple-To-do-list.git
 
 2. Open index.html in your browser.
+
 
 3. Start adding tasks and explore the features. 🎉
