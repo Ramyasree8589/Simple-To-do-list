@@ -1,0 +1,331 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* adjust this to match your navbar height */
+}
+
+
+/* Navbar */
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ff6600;
+  font-size: 1.6rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ff6600;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1950&q=80")
+
+
+
+              no-repeat center center/cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e65c00;
+}
+
+.features {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.feature-box .box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+}
+
+
+
+/* To-Do List */
+.todo {
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+  background: 
+  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+  /*url("https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1950&q=80")*/
+  url("bg image todo.jpg")
+  no-repeat center center/cover;
+
+;
+}
+
+.todo-app {
+  max-width: 400px;
+  margin: auto;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.todo-app input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.todo-app button {
+  padding: 10px 15px;
+  border: none;
+  background: #ff6600;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.todo-app button:hover {
+  background: #e65c00;
+}
+
+#taskList {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  background: #fff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: grid;                     
+  grid-template-columns: auto 1fr auto; 
+  gap: 10px;
+  align-items: center;                
+  color: #000; 
+}
+
+.task-checkbox {
+  transform: scale(1.6);
+  cursor: pointer;
+  /*margin-right: 10px;
+  accent-color: #ff6600;*/ 
+
+}
+
+#taskList li span {                  
+  word-break: break-word;       
+  white-space: normal;
+  font-size: 16px;
+  text-align: left;
+  color: #000; 
+}
+
+#taskList li.done {
+  text-decoration: line-through;
+  color: gray;
+}
+ 
+/*.delete-btn {
+  background: transparent;   
+  color: #ff6600;            
+  border: none;
+  font-size: 16px;          
+  cursor: pointer;
+  padding: 2px;
+}
+.delete-btn:hover {
+  color: red;              
+}*/
+
+.delete-icon {
+  font-size: 16px;    /* smaller icon */
+  color: #ff6600;     /* orange */
+  cursor: pointer;
+  user-select: none;  /* prevent text selection */
+}
+
+.delete-icon:hover {
+  color: red;         /* turns red when hovered */
+}
+
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* adds spacing between Add and Clear All */
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  flex: 1;
+}
+
+
+.clear-btn {
+  margin-left: 10px;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 20px 15px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background: #000;
+}
+
+
+/* Completed task style */
+.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input, .contact textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contact button {
+  cursor: pointer;
+  border: none;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+}

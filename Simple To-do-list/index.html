@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MyTasks ✅</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#todo">To-Do List</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Organize Your Day Effortlessly</h2>
+      <p>A simple and clean To-Do List app right on this landing page.</p>
+      <a href="#todo" class="btn">Start Now</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <h2>Why Use This?</h2>
+    <div class="feature-box">
+        <div class="box">✅ Add and delete tasks instantly</div>
+        <div class="box">📱 Mobile friendly & responsive</div>
+        <div class="box">🎨 Clean & modern design</div>
+    </div>
+  </section>
+
+  <!-- To-Do List App -->
+  <section id="todo" class="todo">
+  <h2>My To-Do List</h2>
+  <div class="todo-app">
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="✍️ Add a new task...">
+      <button onclick="addTask()">Add</button>
+      <button onclick="clearAll()" class="clear-btn">Clear All</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Have feedback? Send us a message below 👇</p><br>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MyTasks | Built with ❤️ and JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
